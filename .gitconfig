@@ -1,0 +1,43 @@
+[user]
+email = Duinkerkenroy1123@gmail.com
+name = RoyDuinkerken123
+
+[alias]
+# run git status and show file number in front of filename (useful for other
+# commands which require number)
+status-num = "!f() { git status -s -uall | awk '{if ($1 == \"??\") {print NR \".
+\\033[31m(UNTRACKED)\" $2 \"\\033[0m\"} else {print NR \". \\033[32m(ADDED)\" $2
+\"\\033[0m\"}}'; }; f"
+
+# add file based on number (retrieved from `status-num`)
+add-num = "!f() { git add $(git status -s -uall | sed -n $1p | awk '{print
+$2}'); }; f"
+
+# undo file add based on number (retrieved from `status-num`)
+reset-num = "!f() { \
+file=$(git status -s -uall | sed -n $1p | awk '{print $2}'); \
+if [ -n \"$file\" ]; then \
+if git diff --cached --quiet -- $file; then \
+			git rm --cached $file && echo 'SUCCESS' || echo 'FAILED'; \
+			else \
+						git reset $file && echo 'SUCCESS' || echo
+						'FAILED'; \
+						fi \
+						else \
+								echo 'No file found at index ' $1; \
+								fi \
+						}; f"
+
+# command to start editting your .gitconfig file
+viewconfig= "!git config --global --edit"
+
+# amend while without changing commit message
+	amend = commit --amend --no-edit
+
+# show splitscreen diff of file
+diffs = difftool -y
+
+# some basic configuration thingies
+[color]
+status = auto
+
