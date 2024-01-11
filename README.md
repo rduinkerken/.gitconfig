@@ -6,7 +6,7 @@ These configuration will help me be more efficient executing git commands.
 
 Feel free to use it and become more lazy! =)
 
-### How to use
+## How to use
 
 1. Place the `.gitconfig` where you usually would.
 2. Place the `git-custom-commands.sh` somewhere on your computer.
@@ -14,9 +14,9 @@ Feel free to use it and become more lazy! =)
 
 🚀 You are now ready to go (and be lazy)! 🚀
 
+## Commands
 
-### Commands
-## `git statusnum`
+### `git statusnum`
   - Performs the cheeky `git status` but adds a number in front of the file.
   - Other commands can interact with this file number.
 
@@ -24,21 +24,21 @@ Feel free to use it and become more lazy! =)
 
 ---
 
-## `git addnum`
+### `git addnum`
   - Performs the good'ol `git add` on a file based on file number.
     
 ![image](https://github.com/rduinkerken/.gitconfig/assets/47044290/ae63a7c3-4a2a-4451-8e76-a5a1cce3ec92)
 
 ---
 
-## `git resetnum` 
+### `git resetnum` 
   - Performs `git reset` on the file based on file number. (The "Unstaged changes after reset: filename is lying btw.")
 
 ![image](https://github.com/rduinkerken/.gitconfig/assets/47044290/2c726d10-b574-43a6-9703-21cef33d5b62)
 
 ---
 
-## `git diffnum` 
+### `git diffnum` 
   - Performs `git diff` on a file based on file number.
     
 ![image](https://github.com/rduinkerken/.gitconfig/assets/47044290/60430889-7652-46e6-b649-34b752f007c7)
