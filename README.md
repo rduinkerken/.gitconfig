@@ -6,8 +6,16 @@ These configuration will help me be more efficient executing git commands.
 
 Feel free to use it and become more lazy! =)
 
+### How to use
 
-# Commands
+1. Place the `.gitconfig` where you usually would.
+2. Place the `git-custom-commands.sh` somewhere on your computer.
+3. Change the paths in the `.gitconfig`
+
+🚀 You are now ready to go (and be lazy)! 🚀
+
+
+### Commands
 ## `git statusnum`
   - Performs the cheeky `git status` but adds a number in front of the file.
   - Other commands can interact with this file number.
@@ -34,14 +42,3 @@ Feel free to use it and become more lazy! =)
   - Performs `git diff` on a file based on file number.
     
 ![image](https://github.com/rduinkerken/.gitconfig/assets/47044290/60430889-7652-46e6-b649-34b752f007c7)
-  
----
-
-### How to use
-
-1. Place the `.gitconfig` where you usually would.
-2. Place the `git-custom-commands.sh` somewhere on your computer.
-3. Change the paths in the `.gitconfig`
-
-🚀 You are now ready to go (and be lazy)! 🚀
-
