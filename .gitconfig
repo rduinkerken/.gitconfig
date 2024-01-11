@@ -19,6 +19,9 @@ viewconfig= "!git config --global --edit"
 diffs = difftool -y
 aliasses = config --get-regexp alias
 
+# view branch history + commits made on that branch + author + date
+bh = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+
 # some basic configuration thingies
 [color]
 status = auto
