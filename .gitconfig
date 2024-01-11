@@ -9,7 +9,6 @@ restorenum = !"C:/Users/Duink/git-custom-commands.sh" restorenum
 resetnum = !"C:/Users/Duink/git-custom-commands.sh" resetnum
 diffnum = !"C:/Users/Duink/git-custom-commands.sh" diffnum
 
-
 # command to start editting your .gitconfig file
 viewconfig= "!git config --global --edit"
 
@@ -18,7 +17,7 @@ viewconfig= "!git config --global --edit"
 
 # show splitscreen diff of file
 diffs = difftool -y
-
+aliasses = config --get-regexp alias
 
 # some basic configuration thingies
 [color]
