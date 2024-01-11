@@ -22,6 +22,9 @@ aliasses = config --get-regexp alias
 # view branch history + commits made on that branch + author + date
 bh = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
 
+# undo local work - except untracked files
+undolocal = reset --hard HEAD
+
 # some basic configuration thingies
 [color]
 status = auto
