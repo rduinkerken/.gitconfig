@@ -6,6 +6,8 @@ These configuration will help me be more efficient executing git commands.
 
 Feel free to use it and become more lazy! =)
 
+---
+
 ## How to use
 
 1. Place the `.gitconfig` where you usually would.
@@ -13,6 +15,8 @@ Feel free to use it and become more lazy! =)
 3. Change the paths in the `.gitconfig`
 
 🚀 You are now ready to go (and be lazy)! 🚀
+
+---
 
 ## Commands
 
