@@ -22,6 +22,11 @@ aliasses = config --get-regexp alias
 # some basic configuration thingies
 [color]
 status = auto
+ui = true
 
 [push]
 default = current
+
+[pull]
+rebase = true
+
