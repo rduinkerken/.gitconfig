@@ -11,6 +11,9 @@ Feel free to use it and become more lazy! =)
 ## How to use
 
 1. Place the `.gitconfig` where you usually would.
+
+(find out the location of your config using the `git config --list --show-origin` command)
+
 2. Place the `git-custom-commands.sh` somewhere on your computer.
 3. Change the paths in the `.gitconfig`
 
